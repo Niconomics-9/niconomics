@@ -18,10 +18,10 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>niconomics — Free AI Training for the New MSP World</title>
-<meta name="description" content="niconomics — Curated free AI training courses, podcasts, and seminars for IT pros navigating the shift to AI-enabled MSP operations.">
-<meta property="og:title" content="niconomics — Free AI Training for the New MSP World">
-<meta property="og:description" content="Curated free AI training courses, podcasts, and seminars for IT pros transitioning to AI.">
+<title>niconomics — The Free AI Course Path</title>
+<meta name="description" content="niconomics — A clear, ordered path through the best free AI courses. Learn on your own time, at your own pace, for $0.">
+<meta property="og:title" content="niconomics — The Free AI Course Path">
+<meta property="og:description" content="A clear, ordered path through the best free AI courses. On your own time, at your own pace.">
 
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -490,7 +490,10 @@ a, button, [role="button"], input, textarea, select {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 18px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .section-title {
@@ -785,11 +788,7 @@ a, button, [role="button"], input, textarea, select {
       <div class="logo-text"><span>nic</span>onomics</div>
     </a>
     <div class="header-actions">
-      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-        </svg>
-      </button>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode"></button>
     </div>
   </div>
 </header>
@@ -797,17 +796,17 @@ a, button, [role="button"], input, textarea, select {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-badge"><span class="dot"></span> Free &amp; Vetted Resources</div>
+    <div class="hero-badge"><span class="dot"></span> 100% Free &amp; On Your Own Time</div>
     <h1>Grind and <span class="accent">Level Up</span></h1>
-    <p class="hero-desc">Free courses, podcasts, and training for IT pros navigating the shift to AI-enabled MSP operations.</p>
+    <p class="hero-desc">The best free AI courses in order. No fluff, no paywalls. Start from zero and build real skills — whenever you have the time.</p>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-value">43</div>
-        <div class="hero-stat-label">Resources</div>
+        <div class="hero-stat-value">6</div>
+        <div class="hero-stat-label">Phases</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-value">7</div>
-        <div class="hero-stat-label">Categories</div>
+        <div class="hero-stat-value">~80 hrs</div>
+        <div class="hero-stat-label">Total</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-value">$0</div>
@@ -818,645 +817,302 @@ a, button, [role="button"], input, textarea, select {
 </section>
 
 <!-- FILTER NAV -->
-<nav class="filter-nav" aria-label="Filter resources by category">
+<nav class="filter-nav" aria-label="Jump to phase">
   <div class="filter-inner">
-    <button class="filter-btn active" data-filter="all">All<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="foundations">Foundations<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="agents">AI Agents<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="helpdesk">IT Helpdesk AI<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="nocode">No-Code Agents<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="podcasts">Podcasts<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="academic">Academic<span class="filter-count"></span></button>
-    <button class="filter-btn" data-filter="l2">Level-Up Skills<span class="filter-count"></span></button>
+    <button class="filter-btn active" data-filter="all">All Phases<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase1">Phase 1<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase2">Phase 2<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase3">Phase 3<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase4">Phase 4<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase5">Phase 5<span class="filter-count"></span></button>
+    <button class="filter-btn" data-filter="phase6">Phase 6<span class="filter-count"></span></button>
   </div>
 </nav>
 
 <!-- MAIN CONTENT -->
 <main class="main">
 
-  <!-- SUGGESTED LEARNING PATH -->
+  <!-- COURSE MAP -->
   <div class="learning-path">
-    <div class="path-title">Suggested Learning Path</div>
-    <p class="path-desc">A recommended order for IT pros starting from zero AI knowledge and building toward agent development.</p>
+    <div class="path-title">Your Course Map</div>
+    <p class="path-desc">Six phases, each building on the last. Go at your own pace — the only deadline is the one you set.</p>
     <div class="path-steps">
       <div class="path-step" style="animation-delay: 0.1s">
         <div class="step-num">01</div>
-        <div class="step-title">AI Literacy</div>
-        <div class="step-content">Start with Elements of AI or Google AI Essentials to understand what AI is and what it can do.</div>
+        <div class="step-title">Understand AI</div>
+        <div class="step-content">~11 hrs — What AI actually is, how it works, and what it can do. No code needed.</div>
       </div>
       <div class="path-step" style="animation-delay: 0.15s">
         <div class="step-num">02</div>
-        <div class="step-title">Prompt Engineering</div>
-        <div class="step-content">Learn to write effective prompts with DeepLearning.AI or AWS Foundations of Prompt Engineering.</div>
+        <div class="step-title">Talk to AI</div>
+        <div class="step-content">~6 hrs — Learn to write prompts that get real results. The skill that changes everything.</div>
       </div>
       <div class="path-step" style="animation-delay: 0.2s">
         <div class="step-num">03</div>
-        <div class="step-title">AI for IT Support</div>
-        <div class="step-content">Apply AI to your daily work with ChatGPT Tips for the Help Desk and IBM AI Fundamentals.</div>
+        <div class="step-title">Build AI Agents</div>
+        <div class="step-content">~12 hrs — Create agents that do work for you. Frameworks, patterns, and real projects.</div>
       </div>
       <div class="path-step" style="animation-delay: 0.25s">
         <div class="step-num">04</div>
-        <div class="step-title">Build AI Agents</div>
-        <div class="step-content">Create your first agents with Hugging Face Agents Course, then explore LangGraph and CrewAI.</div>
+        <div class="step-title">Automate Without Code</div>
+        <div class="step-content">~17 hrs — Build production-grade automations with visual tools. No programming required.</div>
+      </div>
+      <div class="path-step" style="animation-delay: 0.3s">
+        <div class="step-num">05</div>
+        <div class="step-title">Sharpen Your IT Skills</div>
+        <div class="step-content">~27 hrs — Networking, scripting, infrastructure — the fundamentals that make everything else click.</div>
+      </div>
+      <div class="path-step" style="animation-delay: 0.35s">
+        <div class="step-num">06</div>
+        <div class="step-title">Go Deep</div>
+        <div class="step-content">Optional — University-level courses and ongoing podcasts for when you want more.</div>
       </div>
     </div>
   </div>
 
-  <!-- FOUNDATIONS -->
-  <div class="section-group" data-category="foundations">
+  <!-- PHASE 1: UNDERSTAND AI -->
+  <div class="section-group" data-category="phase1">
     <div class="section-header">
-      <div class="section-icon" style="background: rgba(0, 212, 255, 0.12);">🎓</div>
-      <h2 class="section-title">AI Foundations</h2>
+      <div class="section-icon" style="background: rgba(0, 212, 255, 0.12);">01</div>
+      <h2 class="section-title">Understand AI</h2>
     </div>
-    <p class="section-desc">Core AI literacy and fundamentals — perfect starting points for technicians with zero AI background.</p>
+    <p class="section-desc">Start here. These courses explain what AI is and what it can do — no code, no math, just clarity. ~11 hours total.</p>
     <div class="card-grid">
 
-      <a href="https://www.elementsofai.com" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
+      <a href="https://www.elementsofai.com" target="_blank" rel="noopener noreferrer" class="card" data-category="phase1">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🏛</div><span class="provider-name">University of Helsinki</span></div>
-          <span class="card-type-badge badge-course">Course</span>
+          <span class="card-type-badge badge-course">Start Here</span>
         </div>
         <div class="card-title">Elements of AI</div>
-        <div class="card-desc">Beginner-friendly introduction to AI covering what it is, what's possible, and how it affects our lives. No math or programming required. Over 2 million students enrolled.</div>
+        <div class="card-desc">The best first step. Covers what AI is, what's possible, and how it affects everything — without requiring math or programming. Over 2 million people have taken it.</div>
         <div class="card-meta">
           <span class="meta-tag">~6 hrs</span>
           <span class="meta-tag">Free cert</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://grow.google/ai-essentials/" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
+      <a href="https://grow.google/ai-essentials/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase1">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🔵</div><span class="provider-name">Google</span></div>
           <span class="card-type-badge badge-course">Course</span>
         </div>
         <div class="card-title">Google AI Essentials</div>
-        <div class="card-desc">Hands-on program from Google experts covering generative AI fundamentals, effective prompting, and responsible AI use. Real workplace scenarios included.</div>
+        <div class="card-desc">Google's own intro to AI. Hands-on exercises for using AI tools in everyday tasks — writing, organizing, problem-solving. Practical from day one.</div>
         <div class="card-meta">
           <span class="meta-tag">~5 hrs</span>
-          <span class="meta-tag">Google cert</span>
+          <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://learn.microsoft.com/en-us/training/courses/ai-900t00" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft Learn</span></div>
-          <span class="card-type-badge badge-course">Course</span>
-        </div>
-        <div class="card-title">Azure AI Fundamentals (AI-900)</div>
-        <div class="card-desc">Official Microsoft training covering ML, NLP, computer vision, and Azure AI services. Free learning content; optional paid certification exam at the end.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~8 hrs</span>
-          <span class="meta-tag">Free content</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
+    </div>
+  </div>
 
-      <a href="https://skillsbuild.org/adult-learners/explore-learning/artificial-intelligence" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🔷</div><span class="provider-name">IBM SkillsBuild</span></div>
-          <span class="card-type-badge badge-course">Course</span>
-        </div>
-        <div class="card-title">IBM AI Fundamentals</div>
-        <div class="card-desc">Six-course credential covering AI concepts, ethics, chatbots, and practical applications. Completely free including the credential badge for LinkedIn.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~10 hrs</span>
-          <span class="meta-tag">Free credential</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
+  <!-- PHASE 2: TALK TO AI -->
+  <div class="section-group" data-category="phase2">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(0, 212, 255, 0.12);">02</div>
+      <h2 class="section-title">Talk to AI</h2>
+    </div>
+    <p class="section-desc">The highest-leverage skill in AI. Learn to write prompts that actually get the results you want. ~6 hours total.</p>
+    <div class="card-grid">
 
-      <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
+      <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase2">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🧠</div><span class="provider-name">DeepLearning.AI + OpenAI</span></div>
-          <span class="card-type-badge badge-course">Course</span>
+          <span class="card-type-badge badge-course">Start Here</span>
         </div>
         <div class="card-title">ChatGPT Prompt Engineering for Developers</div>
-        <div class="card-desc">Andrew Ng and Isa Fulford teach how to use LLM APIs effectively, write better prompts, and build applications. A must-take for anyone touching AI tools.</div>
+        <div class="card-desc">Taught by Andrew Ng and Isa Fulford from OpenAI. The gold standard for learning how to get real, useful output from AI. Short, dense, and immediately applicable.</div>
         <div class="card-meta">
           <span class="meta-tag">~1.5 hrs</span>
           <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
+          <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/17763/foundations-of-prompt-engineering" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
+      <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/17763/foundations-of-prompt-engineering" target="_blank" rel="noopener noreferrer" class="card" data-category="phase2">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🟠</div><span class="provider-name">AWS Skill Builder</span></div>
           <span class="card-type-badge badge-course">Course</span>
         </div>
         <div class="card-title">Foundations of Prompt Engineering</div>
-        <div class="card-desc">Learn prompt design, context management, and advanced techniques for working with LLMs. Essential knowledge for leveraging AI in any IT workflow.</div>
+        <div class="card-desc">AWS's deep dive into prompt design, techniques, and advanced patterns. Builds on the basics and teaches you to think systematically about AI interaction.</div>
         <div class="card-meta">
           <span class="meta-tag">~4 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.rhsmith.umd.edu/programs/executive-education/learning-opportunities-individuals/free-online-certificate-artificial-intelligence-and-career-empowerment" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🏫</div><span class="provider-name">Univ. of Maryland</span></div>
-          <span class="card-type-badge badge-course">Course</span>
-        </div>
-        <div class="card-title">AI and Career Empowerment Certificate</div>
-        <div class="card-desc">Free certificate program for professionals pivoting into AI-enabled roles. Covers AI literacy, business applications, and actionable career transition strategies.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
-          <span class="meta-tag">Free cert</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.databricks.com/resources/learn/training/generative-ai-fundamentals" target="_blank" rel="noopener noreferrer" class="card" data-category="foundations">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟥</div><span class="provider-name">Databricks</span></div>
-          <span class="card-type-badge badge-course">Course</span>
-        </div>
-        <div class="card-title">Generative AI Fundamentals</div>
-        <div class="card-desc">Fast-paced introduction to generative AI and LLMs. Learn how models work, prompt fluency, and practical use cases for your daily workflow.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~1 hr</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
     </div>
   </div>
 
-  <!-- AI AGENTS -->
-  <div class="section-group" data-category="agents">
+  <!-- PHASE 3: BUILD AI AGENTS -->
+  <div class="section-group" data-category="phase3">
     <div class="section-header">
-      <div class="section-icon" style="background: rgba(167, 139, 250, 0.12);">🤖</div>
-      <h2 class="section-title">AI Agents &amp; Frameworks</h2>
+      <div class="section-icon" style="background: rgba(167, 139, 250, 0.12);">03</div>
+      <h2 class="section-title">Build AI Agents</h2>
     </div>
-    <p class="section-desc">Learn to build, orchestrate, and deploy AI agents using popular frameworks like LangGraph, CrewAI, and AutoGen.</p>
+    <p class="section-desc">Now you build. These courses teach you to create AI agents that actually do work — from simple to multi-agent systems. ~12 hours total.</p>
     <div class="card-grid">
 
-      <a href="https://huggingface.co/learn/agents-course/en/unit0/introduction" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://huggingface.co/learn/agents-course/en/unit0/introduction" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🤗</div><span class="provider-name">Hugging Face</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Start Here</span>
         </div>
         <div class="card-title">AI Agents Course</div>
-        <div class="card-desc">Comprehensive beginner-to-expert course on AI agents. Covers smolagents, LangGraph, LlamaIndex, ReACT framework, multi-agent systems, and RAG. Free certification available.</div>
+        <div class="card-desc">Comprehensive beginner-to-expert course. Covers smolagents, LangGraph, LlamaIndex, ReACT framework, multi-agent systems, and RAG. Free certification available.</div>
         <div class="card-meta">
-          <span class="meta-tag">Multi-week</span>
+          <span class="meta-tag">~4 hrs</span>
           <span class="meta-tag">Free cert</span>
-          <span class="meta-tag">All levels</span>
+          <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🧠</div><span class="provider-name">DeepLearning.AI</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Course</span>
         </div>
         <div class="card-title">AI Agents in LangGraph</div>
-        <div class="card-desc">Build agents with memory, tools, and feedback loops using LangGraph. Taught by Harrison Chase (LangChain creator). Great for understanding agent architectures.</div>
+        <div class="card-desc">Build AI agents using LangGraph. Covers agent architectures, tool use, memory, and state management. Hands-on Jupyter notebook exercises throughout.</div>
         <div class="card-meta">
           <span class="meta-tag">~1.5 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🧠</div><span class="provider-name">DeepLearning.AI</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Course</span>
         </div>
         <div class="card-title">Multi-AI Agent Systems with CrewAI</div>
-        <div class="card-desc">Learn to build collaborative multi-agent systems using CrewAI. Covers role delegation, agent teamwork, and orchestrating autonomous agent groups.</div>
+        <div class="card-desc">Design multi-agent systems where AI agents collaborate. Build crews of specialized agents that handle complex workflows together.</div>
         <div class="card-meta">
           <span class="meta-tag">~2 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://www.deeplearning.ai/short-courses/ai-agentic-design-patterns-with-autogen/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🧠</div><span class="provider-name">DeepLearning.AI</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Course</span>
         </div>
         <div class="card-title">Agentic Design Patterns with AutoGen</div>
-        <div class="card-desc">Reusable design patterns for building agents with Microsoft's AutoGen framework. Covers role prompting, retry loops, and task planning.</div>
+        <div class="card-desc">Microsoft's AutoGen framework for building conversational AI agents. Covers reflection, tool use, planning, and multi-agent collaboration patterns.</div>
         <div class="card-meta">
           <span class="meta-tag">~1.5 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://academy.langchain.com/courses/intro-to-langgraph" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://academy.langchain.com/courses/intro-to-langgraph" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🦜</div><span class="provider-name">LangChain Academy</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Course</span>
         </div>
         <div class="card-title">Introduction to LangGraph</div>
-        <div class="card-desc">Deep dive into LangGraph, the graph-based framework for building complex agent workflows. Includes hands-on labs and real-world applications.</div>
+        <div class="card-desc">Official LangChain course on building stateful, multi-step AI agents. Deep dive into the framework powering many production agent systems.</div>
         <div class="card-meta">
           <span class="meta-tag">~6 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-on-azure/" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft Learn</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
-        </div>
-        <div class="card-title">Develop AI Agents on Azure</div>
-        <div class="card-desc">Hands-on training to build, deploy, and scale cloud-based AI agents on Azure. Directly relevant if your org runs Microsoft infrastructure.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/" target="_blank" rel="noopener noreferrer" class="card" data-category="agents">
+      <a href="https://www.deeplearning.ai/short-courses/building-agentic-rag-with-llamaindex/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase3">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🧠</div><span class="provider-name">DeepLearning.AI</span></div>
-          <span class="card-type-badge badge-agents">Agents</span>
+          <span class="card-type-badge badge-agents">Course</span>
         </div>
         <div class="card-title">Building Agentic RAG with LlamaIndex</div>
-        <div class="card-desc">Merge retrieval-augmented generation (RAG) with agentic workflows using LlamaIndex. Ideal for building knowledge-based AI search agents.</div>
+        <div class="card-desc">Build agents that can search, reason over, and synthesize information from documents. The practical skill behind AI-powered knowledge systems.</div>
         <div class="card-meta">
           <span class="meta-tag">~45 min</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
     </div>
   </div>
 
-  <!-- IT HELPDESK AI -->
-  <div class="section-group" data-category="helpdesk">
+  <!-- PHASE 4: AUTOMATE WITHOUT CODE -->
+  <div class="section-group" data-category="phase4">
     <div class="section-header">
-      <div class="section-icon" style="background: rgba(52, 211, 153, 0.12);">🖥</div>
-      <h2 class="section-title">AI for IT Helpdesk</h2>
+      <div class="section-icon" style="background: rgba(251, 113, 133, 0.12);">04</div>
+      <h2 class="section-title">Automate Without Code</h2>
     </div>
-    <p class="section-desc">Apply AI directly to IT support workflows — ticket triage, documentation, troubleshooting, and knowledge base management.</p>
+    <p class="section-desc">Build real automations with visual, drag-and-drop tools. No programming experience needed — just connect the blocks. ~17 hours total.</p>
     <div class="card-grid">
 
-      <a href="https://www.linkedin.com/learning/chatgpt-tips-for-the-help-desk" target="_blank" rel="noopener noreferrer" class="card" data-category="helpdesk">
+      <a href="https://www.freecodecamp.org/news/learn-n8n-to-design-develop-and-deploy-production-grade-ai-agents/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase4">
         <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">💼</div><span class="provider-name">LinkedIn Learning</span></div>
-          <span class="card-type-badge badge-helpdesk">Helpdesk</span>
-        </div>
-        <div class="card-title">ChatGPT Tips for the Help Desk</div>
-        <div class="card-desc">Targeted course for IT support staff covering strategic planning with AI, prompt engineering for tickets, agent scripting, and building self-help repositories.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~2 hrs</span>
-          <span class="meta-tag">Free trial</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=mqJGmfif1V4" target="_blank" rel="noopener noreferrer" class="card" data-category="helpdesk">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🅰</div><span class="provider-name">Atera</span></div>
-          <span class="card-type-badge badge-helpdesk">Webinar</span>
-        </div>
-        <div class="card-title">Mastering the AI Technician</div>
-        <div class="card-desc">Webinar on building and fine-tuning your own AI technician with IT Autopilot. Real-world use cases for achieving full IT autonomy with AI agents.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~47 min</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=nwAfP4RtJdA" target="_blank" rel="noopener noreferrer" class="card" data-category="helpdesk">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🎯</div><span class="provider-name">Practical AI for IT</span></div>
-          <span class="card-type-badge badge-helpdesk">Webinar</span>
-        </div>
-        <div class="card-title">Practical AI for IT Agents: Virtual Technician</div>
-        <div class="card-desc">On-demand webinar demonstrating how AI virtual technicians can execute common fixes, troubleshoot issues, and free up techs for high-impact work.</div>
-        <div class="card-meta">
-          <span class="meta-tag">On-demand</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://trailhead.salesforce.com/content/learn/modules/artificial-intelligence-for-customer-service" target="_blank" rel="noopener noreferrer" class="card" data-category="helpdesk">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">☁️</div><span class="provider-name">Salesforce Trailhead</span></div>
-          <span class="card-type-badge badge-helpdesk">Course</span>
-        </div>
-        <div class="card-title">AI for Customer Service</div>
-        <div class="card-desc">Free Trailhead modules on deploying AI in support environments. Covers AI-powered chatbots, intelligent case routing, and knowledge management.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://microsoft.github.io/AI-For-Beginners/" target="_blank" rel="noopener noreferrer" class="card" data-category="helpdesk">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft</span></div>
-          <span class="card-type-badge badge-helpdesk">Course</span>
-        </div>
-        <div class="card-title">AI for Beginners Curriculum</div>
-        <div class="card-desc">12-week, 24-lesson open-source curriculum with practical lessons, quizzes, and labs. Covers neural networks, NLP, computer vision, and more.</div>
-        <div class="card-meta">
-          <span class="meta-tag">12 weeks</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- NO-CODE AGENTS -->
-  <div class="section-group" data-category="nocode">
-    <div class="section-header">
-      <div class="section-icon" style="background: rgba(251, 113, 133, 0.12);">⚡</div>
-      <h2 class="section-title">No-Code AI Agents</h2>
-    </div>
-    <p class="section-desc">Build and deploy AI agents without writing code using visual workflow tools like n8n — perfect for IT pros who want results fast.</p>
-    <div class="card-grid">
-
-      <a href="https://www.freecodecamp.org/news/learn-n8n-to-design-develop-and-deploy-production-grade-ai-agents/" target="_blank" rel="noopener noreferrer" class="card" data-category="nocode">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🔥</div><span class="provider-name">freeCodeCamp</span></div>
-          <span class="card-type-badge badge-nocode">No-Code</span>
+          <div class="card-provider"><div class="provider-logo">📘</div><span class="provider-name">freeCodeCamp</span></div>
+          <span class="card-type-badge badge-nocode">Start Here</span>
         </div>
         <div class="card-title">n8n AI Agents — Full Course</div>
-        <div class="card-desc">Build production-grade AI agents with n8n: Email AI Agent, Research Workflows, Customer Support RAG Agent, and multi-agent systems. Covers Docker and self-hosting.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Full course</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=geR9PeCuHK4" target="_blank" rel="noopener noreferrer" class="card" data-category="nocode">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">▶️</div><span class="provider-name">AI Foundations (YouTube)</span></div>
-          <span class="card-type-badge badge-nocode">No-Code</span>
-        </div>
-        <div class="card-title">How to Build AI Agents with n8n (2025)</div>
-        <div class="card-desc">5-hour YouTube course going from zero to autonomous agents. Covers n8n basics, node types, building automations, and creating fully functional AI agents.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~5 hrs</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=2GZ2SNXWK-c" target="_blank" rel="noopener noreferrer" class="card" data-category="nocode">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">▶️</div><span class="provider-name">YouTube</span></div>
-          <span class="card-type-badge badge-nocode">No-Code</span>
-        </div>
-        <div class="card-title">n8n Full Course — 6 Hours</div>
-        <div class="card-desc">Complete zero-to-hero n8n course covering the entire platform plus building real AI agents and procedural workflows. Great for MSP automation.</div>
+        <div class="card-desc">Design, develop, and deploy production-grade AI agents using n8n's visual workflow builder. Goes from basics to real deployments.</div>
         <div class="card-meta">
           <span class="meta-tag">~6 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=geR9PeCuHK4" target="_blank" rel="noopener noreferrer" class="card" data-category="phase4">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">▶️</div><span class="provider-name">YouTube</span></div>
+          <span class="card-type-badge badge-nocode">Tutorial</span>
+        </div>
+        <div class="card-title">How to Build AI Agents with n8n (2025)</div>
+        <div class="card-desc">Updated walkthrough covering the latest n8n features for building AI-powered automation workflows. Good companion to the full course.</div>
+        <div class="card-meta">
+          <span class="meta-tag">~5 hrs</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">Beginner</span>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=2GZ2SNXWK-c" target="_blank" rel="noopener noreferrer" class="card" data-category="phase4">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">▶️</div><span class="provider-name">YouTube</span></div>
+          <span class="card-type-badge badge-nocode">Tutorial</span>
+        </div>
+        <div class="card-title">n8n Full Course — 6 Hours</div>
+        <div class="card-desc">End-to-end n8n course covering every node type, API integrations, error handling, and deployment. Reference material you'll come back to.</div>
+        <div class="card-meta">
+          <span class="meta-tag">~6 hrs</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">Intermediate</span>
+        </div>
       </a>
 
     </div>
   </div>
 
-  <!-- PODCASTS -->
-  <div class="section-group" data-category="podcasts">
+  <!-- PHASE 5: SHARPEN YOUR IT SKILLS -->
+  <div class="section-group" data-category="phase5">
     <div class="section-header">
-      <div class="section-icon" style="background: rgba(245, 158, 11, 0.12);">🎙</div>
-      <h2 class="section-title">Podcasts</h2>
+      <div class="section-icon" style="background: rgba(56, 189, 248, 0.12);">05</div>
+      <h2 class="section-title">Sharpen Your IT Skills</h2>
     </div>
-    <p class="section-desc">Stay current on AI trends and agent developments during your commute or downtime. All free to listen.</p>
+    <p class="section-desc">The fundamentals that make everything else click — networking, scripting, infrastructure. Pick what matters to you. ~27 hours total.</p>
     <div class="card-grid">
 
-      <a href="https://open.spotify.com/show/5T76ZhmYExIcJQsWZSOj7J" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🎧</div><span class="provider-name">Spotify</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">AI Agents: From Basics to Mastery</div>
-        <div class="card-desc">Dedicated podcast on AI agents — covers fundamentals to advanced concepts. Perfect for IT pros who want to understand agent architectures while commuting.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Weekly</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">All levels</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.cognitiverevolution.ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🧩</div><span class="provider-name">Nathan Labenz</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">The Cognitive Revolution</div>
-        <div class="card-desc">Deep-dive conversations with AI builders, researchers, and investors. Nathan Labenz scouts AI from every angle with clear, detailed breakdowns of complex topics.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Weekly</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.latent.space/" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🚀</div><span class="provider-name">Latent Space</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">Latent Space: The AI Engineer Podcast</div>
-        <div class="card-desc">Technical but accessible podcast covering the AI engineering stack — agents, tooling, frameworks, and infrastructure. Great for understanding what you're building toward.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Weekly</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://zapier.com/blog/best-ai-podcasts/" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">⚡</div><span class="provider-name">Zapier / Wade Foster</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">Agents of Scale</div>
-        <div class="card-desc">Zapier CEO Wade Foster interviews leaders about real AI transformation at scale. Focused on practical automation stories, not just theory.</div>
-        <div class="card-meta">
-          <span class="meta-tag">30-60 min</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">All levels</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://podcasts.apple.com/us/podcast/the-ai-podcast/id1186480811" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟢</div><span class="provider-name">NVIDIA</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">The AI Podcast by NVIDIA</div>
-        <div class="card-desc">In-depth interviews exploring how AI is transforming industries from healthcare to entertainment. Features experts from various sectors on practical AI applications.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Weekly</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">All levels</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://emerj.com/artificial-intelligence-podcast/" target="_blank" rel="noopener noreferrer" class="card" data-category="podcasts">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">📊</div><span class="provider-name">Emerj</span></div>
-          <span class="card-type-badge badge-podcast">Podcast</span>
-        </div>
-        <div class="card-title">AI in Business</div>
-        <div class="card-desc">Hosted by Dan Faggella — focuses on the intersection of AI and enterprise strategy. Interviews with Fortune 500 AI executives and startup founders on practical adoption.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Weekly</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">All levels</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- ACADEMIC / DEEP LEARNING -->
-  <div class="section-group" data-category="academic">
-    <div class="section-header">
-      <div class="section-icon" style="background: rgba(244, 114, 182, 0.12);">📚</div>
-      <h2 class="section-title">Academic &amp; Advanced</h2>
-    </div>
-    <p class="section-desc">University-level courses for technicians who want deeper understanding of how AI systems actually work under the hood.</p>
-    <div class="card-grid">
-
-      <a href="https://cs50.harvard.edu/ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="academic">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🎓</div><span class="provider-name">Harvard / edX</span></div>
-          <span class="card-type-badge badge-academic">Academic</span>
-        </div>
-        <div class="card-title">CS50 Introduction to AI with Python</div>
-        <div class="card-desc">Harvard's renowned course covering graph search, machine learning, optimization, and neural networks. Hands-on projects in Python. Free to audit via OpenCourseWare.</div>
-        <div class="card-meta">
-          <span class="meta-tag">7 weeks</span>
-          <span class="meta-tag">Free audit</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/" target="_blank" rel="noopener noreferrer" class="card" data-category="academic">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🏛</div><span class="provider-name">MIT OpenCourseWare</span></div>
-          <span class="card-type-badge badge-academic">Academic</span>
-        </div>
-        <div class="card-title">MIT 6.S191 — Intro to Deep Learning</div>
-        <div class="card-desc">MIT's official intro to deep learning course. Covers neural networks, CNNs, RNNs, transformers, and generative models. Updated annually with latest developments.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~10 hrs</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Advanced</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.fast.ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="academic">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">⚡</div><span class="provider-name">fast.ai</span></div>
-          <span class="card-type-badge badge-academic">Academic</span>
-        </div>
-        <div class="card-title">Practical Deep Learning for Coders</div>
-        <div class="card-desc">Top-down, practical approach to deep learning. Build real projects from day one, then understand the theory. Highly recommended by the ML community.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~30 hrs</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://llmagents-learning.org/" target="_blank" rel="noopener noreferrer" class="card" data-category="academic">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🎓</div><span class="provider-name">UC Berkeley / Dawn Song</span></div>
-          <span class="card-type-badge badge-academic">Academic</span>
-        </div>
-        <div class="card-title">Large Language Model Agents MOOC</div>
-        <div class="card-desc">Structured MOOC covering agent architectures, decision-making, multi-agent collaboration, and tool use. Academic rigor with practical applications.</div>
-        <div class="card-meta">
-          <span class="meta-tag">~4 hrs</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Advanced</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://learn.nvidia.com/en-us/training/self-paced-courses" target="_blank" rel="noopener noreferrer" class="card" data-category="academic">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟢</div><span class="provider-name">NVIDIA DLI</span></div>
-          <span class="card-type-badge badge-academic">Academic</span>
-        </div>
-        <div class="card-title">NVIDIA Deep Learning Institute — Free Courses</div>
-        <div class="card-desc">Free foundational courses from NVIDIA covering deep learning, multimodal agents, and GPU-accelerated AI. Options from 2-hour modules to 8-hour implementations.</div>
-        <div class="card-meta">
-          <span class="meta-tag">2-8 hrs</span>
-          <span class="meta-tag">Free tier</span>
-          <span class="meta-tag">All levels</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- LEVEL-UP SKILLS -->
-  <div class="section-group" data-category="l2">
-    <div class="section-header">
-      <div class="section-icon" style="background: rgba(56, 189, 248, 0.12);">🚀</div>
-      <h2 class="section-title">Level-Up Skills</h2>
-    </div>
-    <p class="section-desc">Core technical skills for the new MSP world — troubleshooting, networking, scripting, and infrastructure.</p>
-    <div class="card-grid">
-
-      <a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase5">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">📺</div><span class="provider-name">Professor Messer</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <span class="card-type-badge badge-l2">Course</span>
         </div>
         <div class="card-title">CompTIA A+ Core 1 (220-1201) Training</div>
         <div class="card-desc">63 free video lessons covering hardware, networking, mobile devices, virtualization, and troubleshooting. The gold standard for free A+ prep.</div>
@@ -1465,43 +1121,26 @@ a, button, [role="button"], input, textarea, select {
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase5">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">📺</div><span class="provider-name">Professor Messer</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <span class="card-type-badge badge-l2">Course</span>
         </div>
         <div class="card-title">CompTIA Network+ (N10-009) Training</div>
-        <div class="card-desc">Complete free video course covering network architecture, security, troubleshooting, and operations. Essential for moving beyond desktop support.</div>
+        <div class="card-desc">Complete free video course covering network architecture, security, troubleshooting, and operations. Essential for understanding how systems connect.</div>
         <div class="card-meta">
           <span class="meta-tag">~15 hrs</span>
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://learn.microsoft.com/en-us/training/paths/active-directory-domain-services/" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase5">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft Learn</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
-        </div>
-        <div class="card-title">Active Directory Domain Services</div>
-        <div class="card-desc">Learn AD DS fundamentals, domain controller management, Group Policy Objects, and Certificate Services. Critical knowledge for any sysadmin role.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft Learn</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <span class="card-type-badge badge-l2">Course</span>
         </div>
         <div class="card-title">Get Started with Windows PowerShell</div>
         <div class="card-desc">Official Microsoft learning path covering PowerShell fundamentals, commands, the pipeline, and VS Code integration. The foundation for IT automation.</div>
@@ -1510,28 +1149,12 @@ a, button, [role="button"], input, textarea, select {
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://learn.microsoft.com/en-us/training/courses/az-040t00" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
-        <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🟦</div><span class="provider-name">Microsoft Learn</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
-        </div>
-        <div class="card-title">Automate Administration with PowerShell</div>
-        <div class="card-desc">Build advanced scripts for automating repetitive tasks, generating reports, and managing Windows servers. Levels up your scripting from basic to pro.</div>
-        <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Intermediate</span>
-        </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
-      </a>
-
-      <a href="https://www.cybrary.it/course/network-fundamentals" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://www.cybrary.it/course/network-fundamentals" target="_blank" rel="noopener noreferrer" class="card" data-category="phase5">
         <div class="card-top">
           <div class="card-provider"><div class="provider-logo">🔐</div><span class="provider-name">Cybrary</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <span class="card-type-badge badge-l2">Course</span>
         </div>
         <div class="card-title">Network Fundamentals</div>
         <div class="card-desc">Beginner-level networking course covering data communication, network functions, and protocols. Includes virtual labs and a certificate of completion.</div>
@@ -1540,52 +1163,116 @@ a, button, [role="button"], input, textarea, select {
           <span class="meta-tag">Free</span>
           <span class="meta-tag">Beginner</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://serveracademy.com/blog/active-directory-101-a-step-by-step-tutorial-for-beginners/" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+    </div>
+  </div>
+
+  <!-- PHASE 6: GO DEEP -->
+  <div class="section-group" data-category="phase6">
+    <div class="section-header">
+      <div class="section-icon" style="background: rgba(244, 114, 182, 0.12);">06</div>
+      <h2 class="section-title">Go Deep</h2>
+    </div>
+    <p class="section-desc">University courses for when you want the full picture, and podcasts to keep learning on the go. Take what calls to you.</p>
+    <div class="card-grid">
+
+      <a href="https://cs50.harvard.edu/ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
         <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🖥</div><span class="provider-name">Server Academy</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <div class="card-provider"><div class="provider-logo">🏛</div><span class="provider-name">Harvard / edX</span></div>
+          <span class="card-type-badge badge-academic">Course</span>
         </div>
-        <div class="card-title">Active Directory 101 for Beginners</div>
-        <div class="card-desc">Hands-on tutorial covering AD structure, managing users and groups, OUs, and interactive IT labs. Free account gets you lab access.</div>
+        <div class="card-title">CS50 Introduction to AI with Python</div>
+        <div class="card-desc">Harvard's legendary CS50, but for AI. Covers search, knowledge, uncertainty, optimization, learning, and neural networks. Serious but accessible.</div>
         <div class="card-meta">
-          <span class="meta-tag">~1 hr</span>
-          <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
+          <span class="meta-tag">~25 hrs</span>
+          <span class="meta-tag">Free to audit</span>
+          <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://www.simplilearn.com/free-itil-v-four-course-skillup" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
         <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">📋</div><span class="provider-name">Simplilearn</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <div class="card-provider"><div class="provider-logo">🏛</div><span class="provider-name">MIT OpenCourseWare</span></div>
+          <span class="card-type-badge badge-academic">Course</span>
         </div>
-        <div class="card-title">ITIL 4 Foundation — Free Course</div>
-        <div class="card-desc">Understand IT service management fundamentals, the ITIL framework, service lifecycle, and best practices. Key knowledge for escalation and process work.</div>
+        <div class="card-title">MIT 6.S191 — Intro to Deep Learning</div>
+        <div class="card-desc">MIT's fast-paced intro to deep learning. Covers neural networks, CNNs, transformers, generative models, and reinforcement learning with TensorFlow.</div>
         <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
+          <span class="meta-tag">~10 hrs</span>
           <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
+          <span class="meta-tag">Advanced</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
       </a>
 
-      <a href="https://training.fortinet.com/local/staticpage/view.php?page=library_fortinet-networking-fundamentals" target="_blank" rel="noopener noreferrer" class="card" data-category="l2">
+      <a href="https://www.fast.ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
         <div class="card-top">
-          <div class="card-provider"><div class="provider-logo">🛡</div><span class="provider-name">Fortinet</span></div>
-          <span class="card-type-badge badge-l2">Level Up</span>
+          <div class="card-provider"><div class="provider-logo">🚀</div><span class="provider-name">fast.ai</span></div>
+          <span class="card-type-badge badge-academic">Course</span>
         </div>
-        <div class="card-title">Fortinet Networking Fundamentals</div>
-        <div class="card-desc">Free training on data communication essentials and basic network functions from a leading security vendor. Strong foundation for network troubleshooting.</div>
+        <div class="card-title">Practical Deep Learning for Coders</div>
+        <div class="card-desc">Top-down approach: build working models first, understand theory as you go. Widely considered the best free deep learning course on the internet.</div>
         <div class="card-meta">
-          <span class="meta-tag">Self-paced</span>
+          <span class="meta-tag">~30 hrs</span>
           <span class="meta-tag">Free</span>
-          <span class="meta-tag">Beginner</span>
+          <span class="meta-tag">Intermediate</span>
         </div>
-        <svg class="card-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 15L15 5M15 5H8M15 5v7"/></svg>
+      </a>
+
+      <a href="https://llmagents-learning.org/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">🏛</div><span class="provider-name">UC Berkeley</span></div>
+          <span class="card-type-badge badge-academic">Course</span>
+        </div>
+        <div class="card-title">Large Language Model Agents MOOC</div>
+        <div class="card-desc">Berkeley's course on LLM agents — reasoning, tool use, planning, and multi-agent systems. Taught by top researchers in the field.</div>
+        <div class="card-meta">
+          <span class="meta-tag">~4 hrs</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">Advanced</span>
+        </div>
+      </a>
+
+      <a href="https://www.cognitiverevolution.ai/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">🎧</div><span class="provider-name">Podcast</span></div>
+          <span class="card-type-badge badge-podcast">Podcast</span>
+        </div>
+        <div class="card-title">The Cognitive Revolution</div>
+        <div class="card-desc">Deep, technical interviews with AI researchers and builders. Excellent for staying current on what's actually happening in AI — not hype, substance.</div>
+        <div class="card-meta">
+          <span class="meta-tag">Weekly</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">All levels</span>
+        </div>
+      </a>
+
+      <a href="https://www.latent.space/" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">🎧</div><span class="provider-name">Podcast</span></div>
+          <span class="card-type-badge badge-podcast">Podcast</span>
+        </div>
+        <div class="card-title">Latent Space: The AI Engineer Podcast</div>
+        <div class="card-desc">By AI engineers, for AI engineers. Covers the tools, frameworks, and thinking behind building real AI products. Great commute listening.</div>
+        <div class="card-meta">
+          <span class="meta-tag">Weekly</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">Intermediate</span>
+        </div>
+      </a>
+
+      <a href="https://podcasts.apple.com/us/podcast/the-ai-podcast/id1186480811" target="_blank" rel="noopener noreferrer" class="card" data-category="phase6">
+        <div class="card-top">
+          <div class="card-provider"><div class="provider-logo">🎧</div><span class="provider-name">NVIDIA</span></div>
+          <span class="card-type-badge badge-podcast">Podcast</span>
+        </div>
+        <div class="card-title">The AI Podcast by NVIDIA</div>
+        <div class="card-desc">NVIDIA's weekly show on AI breakthroughs. Industry leaders explain how AI is being applied across healthcare, robotics, gaming, and more.</div>
+        <div class="card-meta">
+          <span class="meta-tag">Weekly</span>
+          <span class="meta-tag">Free</span>
+          <span class="meta-tag">All levels</span>
+        </div>
       </a>
 
     </div>
@@ -1596,7 +1283,7 @@ a, button, [role="button"], input, textarea, select {
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
-    <p>Last updated March 2026. All resources verified as free or free-to-audit at time of curation.</p>
+    <p>All courses verified free at time of curation. Go at your own pace — no deadlines, no pressure.</p>
     <p style="margin-top: var(--space-2);">
       <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
     </p>
@@ -1672,7 +1359,7 @@ a, button, [role="button"], input, textarea, select {
       const visible = document.querySelectorAll('.card:not([data-hidden="true"])');
       visible.forEach((c, i) => {
         c.style.animation = 'none';
-        c.offsetHeight; // force reflow
+        c.offsetHeight;
         c.style.animation = '';
         c.style.animationDelay = (i * 0.05) + 's';
       });
