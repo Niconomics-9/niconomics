@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Foundations — niconomics</title>
+<meta name="description" content="Start here. Understand what AI is, how it works, and what's possible — no coding, no math required.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function(){
+    var s=localStorage.getItem('niconomics-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',s);
+  })();
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <rect width="30" height="30" rx="7" fill="var(--cyan)" opacity=".12"/>
+        <text x="15" y="21" text-anchor="middle" font-family="'Cabinet Grotesk',sans-serif" font-weight="800" font-size="18" fill="var(--cyan)">n</text>
+      </svg>
+      <span class="logo-wordmark"><span>nic</span>onomics</span>
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+  </div>
+</header>
+
+<div class="stage-page-wrap">
+
+  <a href="index.html" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    All Stages
+  </a>
+
+  <div class="stage-hero">
+    <div class="stage-eyebrow">
+      <span>Stage 1 of 5</span>
+      <span class="badge badge-beginner">Beginner</span>
+    </div>
+    <h1>AI Foundations</h1>
+    <p>Understand what AI is, how it works, and what it can do. No coding, no math, no prior experience needed — just curiosity.</p>
+    <div class="stage-hero-stats">
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        3 resources
+      </span>
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        ~10 hrs
+      </span>
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        100% free
+      </span>
+    </div>
+  </div>
+
+  <main class="resource-grid">
+
+    <a href="https://www.elementsofai.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🏛</div>
+          <span class="provider-name">University of Helsinki</span>
+        </div>
+        <span class="resource-type">Start Here</span>
+      </div>
+      <div class="resource-title">Elements of AI</div>
+      <div class="resource-desc">The best first step into AI. Covers what AI is, what's possible, and how it affects everyday life — without requiring math or code. Free certificate included. Taken by over 2 million people worldwide.</div>
+      <div class="resource-meta">
+        <span class="chip">~6 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Free cert</span>
+        <span class="chip">No prerequisites</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🔵</div>
+          <span class="provider-name">Google for Developers</span>
+        </div>
+        <span class="resource-type">Course</span>
+      </div>
+      <div class="resource-title">Google Machine Learning Crash Course</div>
+      <div class="resource-desc">Google's own intro to ML — neural networks, classification, regression, and how models learn. Hands-on exercises with real datasets. Completely free with no account required.</div>
+      <div class="resource-meta">
+        <span class="chip">~15 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Beginner</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🎨</div>
+          <span class="provider-name">3Blue1Brown</span>
+        </div>
+        <span class="resource-type">Video Series</span>
+      </div>
+      <div class="resource-title">Neural Networks — Visual Explainer Series</div>
+      <div class="resource-desc">The clearest visual explanation of how neural networks actually work — from the basic structure to backpropagation and gradient descent. Free on YouTube, no account needed. Watch alongside the other two resources.</div>
+      <div class="resource-meta">
+        <span class="chip">~3 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">YouTube</span>
+        <span class="chip">Visual</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+  </main>
+
+  <nav class="stage-footer-nav" aria-label="Stage navigation">
+    <a href="index.html" class="btn btn-outline btn-sm nav-left">← Home</a>
+    <span class="nav-center">Stage 1 of 5</span>
+    <a href="prompting.html" class="btn btn-primary btn-sm nav-right">Next: Prompting →</a>
+  </nav>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>All resources are 100% free — no trials, no paywalls. <a href="index.html">← Back to all stages</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

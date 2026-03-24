@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Deep — niconomics</title>
+<meta name="description" content="University-level AI depth — neural networks, deep learning, LLMs. The full technical picture, completely free.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function(){
+    var s=localStorage.getItem('niconomics-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+    document.documentElement.setAttribute('data-theme',s);
+  })();
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <rect width="30" height="30" rx="7" fill="var(--cyan)" opacity=".12"/>
+        <text x="15" y="21" text-anchor="middle" font-family="'Cabinet Grotesk',sans-serif" font-weight="800" font-size="18" fill="var(--cyan)">n</text>
+      </svg>
+      <span class="logo-wordmark"><span>nic</span>onomics</span>
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+  </div>
+</header>
+
+<div class="stage-page-wrap">
+
+  <a href="index.html" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    All Stages
+  </a>
+
+  <div class="stage-hero">
+    <div class="stage-eyebrow">
+      <span>Stage 4 of 5</span>
+      <span class="badge badge-advanced">Advanced</span>
+    </div>
+    <h1>Go Deep</h1>
+    <p>University-level courses and expert-taught content for when you want the full technical picture. Pick the path that fits where you want to go — all of it is free.</p>
+    <div class="stage-hero-stats">
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        5 resources
+      </span>
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        ~60+ hrs
+      </span>
+      <span class="stage-hero-stat">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        100% free
+      </span>
+    </div>
+  </div>
+
+  <main class="resource-grid">
+
+    <a href="https://www.youtube.com/@AndrejKarpathy" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">▶️</div>
+          <span class="provider-name">Andrej Karpathy</span>
+        </div>
+        <span class="resource-type">Start Here</span>
+      </div>
+      <div class="resource-title">Neural Networks: Zero to Hero</div>
+      <div class="resource-desc">Andrej Karpathy (former OpenAI, Tesla) builds neural networks from scratch — starting with micrograd, through backpropagation, to building a GPT from first principles. The best bottom-up explanation of how LLMs work. Free on YouTube.</div>
+      <div class="resource-meta">
+        <span class="chip">~20 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">YouTube</span>
+        <span class="chip">From first principles</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://course.fast.ai" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🚀</div>
+          <span class="provider-name">fast.ai</span>
+        </div>
+        <span class="resource-type">Course</span>
+      </div>
+      <div class="resource-title">Practical Deep Learning for Coders</div>
+      <div class="resource-desc">Top-down approach: build working models first, understand theory as you go. Widely considered the best free deep learning course online — covers vision, NLP, tabular data, and generative models using PyTorch and fastai. Always free.</div>
+      <div class="resource-meta">
+        <span class="chip">~30 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Python required</span>
+        <span class="chip">Intermediate</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://cs229.stanford.edu" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🏛</div>
+          <span class="provider-name">Stanford University</span>
+        </div>
+        <span class="resource-type">University Course</span>
+      </div>
+      <div class="resource-title">Stanford CS229 — Machine Learning</div>
+      <div class="resource-desc">Andrew Ng's original Stanford ML course — lecture notes, problem sets, and slides freely available. Covers supervised learning, unsupervised learning, reinforcement learning, and the mathematical foundations underneath all of it.</div>
+      <div class="resource-meta">
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Lecture notes</span>
+        <span class="chip">Math-heavy</span>
+        <span class="chip">Advanced</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://huggingface.co/learn/nlp-course" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">🤗</div>
+          <span class="provider-name">Hugging Face</span>
+        </div>
+        <span class="resource-type">Course</span>
+      </div>
+      <div class="resource-title">Hugging Face NLP & LLM Course</div>
+      <div class="resource-desc">The definitive free course for working with transformers and large language models — tokenization, fine-tuning, building NLP pipelines, and deploying models. Built by the team that maintains the Transformers library. Completely free.</div>
+      <div class="resource-meta">
+        <span class="chip">~10 hrs</span>
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Python required</span>
+        <span class="chip">Intermediate</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+    <a href="https://huggingface.co/papers" target="_blank" rel="noopener noreferrer" class="resource-card">
+      <div class="resource-card-top">
+        <div class="resource-provider">
+          <div class="provider-icon">📄</div>
+          <span class="provider-name">Hugging Face</span>
+        </div>
+        <span class="resource-type">Research Feed</span>
+      </div>
+      <div class="resource-title">Hugging Face Papers</div>
+      <div class="resource-desc">Daily feed of the most important AI research papers, curated and discussed by the community. The best free way to stay on top of what's actually happening at the frontier of AI research. No account required.</div>
+      <div class="resource-meta">
+        <span class="chip chip-free">Free</span>
+        <span class="chip">Daily updates</span>
+        <span class="chip">Research frontier</span>
+      </div>
+      <svg class="resource-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+    </a>
+
+  </main>
+
+  <nav class="stage-footer-nav" aria-label="Stage navigation">
+    <a href="building.html" class="btn btn-outline btn-sm nav-left">← Stage 3</a>
+    <span class="nav-center">Stage 4 of 5</span>
+    <a href="podcasts.html" class="btn btn-primary btn-sm nav-right">Next: Podcasts →</a>
+  </nav>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>All resources are 100% free — no trials, no paywalls. <a href="index.html">← Back to all stages</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
