@@ -81,10 +81,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem 1.25rem;
     gap: 1rem;
   }
+  /* Safe centering: spacers collapse when content exceeds viewport */
+  .crt-wrap > .crt-header { margin-top: auto; }
+  .crt-wrap > .crt-footer { margin-bottom: auto; }
 
   /* Header */
   .crt-header {
