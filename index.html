@@ -376,10 +376,10 @@ class Orb {
     this.phase      = Math.random() * Math.PI * 2;
     this.pulseSpeed = 0.22 + Math.random() * 0.28;
 
-    this.driftAmpX = 38 + Math.random() * 52;
-    this.driftAmpY = 28 + Math.random() * 48;
-    this.driftSpX  = 0.16 + Math.random() * 0.22;
-    this.driftSpY  = 0.12 + Math.random() * 0.2;
+    this.driftAmpX = 18 + Math.random() * 22;
+    this.driftAmpY = 14 + Math.random() * 18;
+    this.driftSpX  = 0.06 + Math.random() * 0.07;
+    this.driftSpY  = 0.05 + Math.random() * 0.06;
     this.driftPhX  = Math.random() * Math.PI * 2;
     this.driftPhY  = Math.random() * Math.PI * 2;
 
@@ -588,7 +588,7 @@ function drawCursor(onLive) {
 let t = 0;
 function render() {
   requestAnimationFrame(render);
-  t += 0.008;
+  t += 0.003;
 
   ctx.clearRect(0, 0, W, H);
   ctx.fillStyle = '#03050a';
