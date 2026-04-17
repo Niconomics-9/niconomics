@@ -86,6 +86,24 @@ body {
   border-bottom: 1px solid rgba(100,160,255,0.2);
 }
 
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+}
+.nav-back {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--codex-muted);
+  transition: color var(--ease);
+}
+.nav-back:hover { color: var(--codex-white); }
+.nav-sep {
+  color: var(--codex-dim);
+  font-size: 0.8rem;
+}
+
 .codex-logo {
   font-family: var(--font-display);
   font-size: 1.05rem;
