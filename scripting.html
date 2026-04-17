@@ -487,6 +487,38 @@ body {
   color: var(--dim);
 }
 
+/* ── SECTION JUMP NAV ────────────────────────────────────────── */
+.section-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.section-nav-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--dim);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-right: 0.25rem;
+}
+.snav-btn {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid var(--border-hi);
+  border-radius: 1px;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+.snav-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-gl); }
+.snav-sep { color: var(--dim); font-family: var(--mono); font-size: 0.7rem; }
+
 /* ── RESPONSIVE ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .page-wrap   { padding: 0 1rem; }
@@ -532,8 +564,16 @@ body {
     <p class="hero-sub">Curated resources for IT pros and developers. PowerShell, Bash, Python, and automation — from your first cmdlet to production-grade scripts. Everything here is free.</p>
   </section>
 
+  <!-- ── SECTION JUMP NAV ──────────────────────────────────── -->
+  <nav class="section-nav" aria-label="Jump to section">
+    <span class="section-nav-label">Jump to:</span>
+    <a href="#section-it"  class="snav-btn">IT / MSP — PowerShell &amp; Bash</a>
+    <span class="snav-sep">·</span>
+    <a href="#section-dev" class="snav-btn">Dev — Python &amp; Automation</a>
+  </nav>
+
   <!-- ── SECTION: IT / MSP ────────────────────────────────── -->
-  <div id="tab-it">
+  <div id="section-it">
   <div class="sub-header">
     <span class="sub-pill pill-it">IT / MSP</span>
     <span class="sub-title">PowerShell · Bash · RMM Automation</span>
@@ -664,7 +704,7 @@ body {
   </div><!-- /tab-panel it -->
 
   <!-- ── SECTION: DEV ──────────────────────────────────────── -->
-  <div id="tab-dev">
+  <div id="section-dev">
   <div class="sub-header">
     <span class="sub-pill pill-dev">Dev</span>
     <span class="sub-title">Python · JavaScript · Automation</span>
