@@ -154,112 +154,11 @@ html, body {
   border: 1px solid rgba(42,74,90,0.45);
 }
 
-/* ── Mobile list ── */
+/* ── Mobile list — hidden everywhere, canvas is the UI ── */
 #mobile-list { display: none; }
 
 @media (max-width: 700px) {
-  html, body { overflow-y: auto; cursor: auto; }
-
-  #canvas, #intro, .corner, #tooltip { display: none; }
-
-  #mobile-list {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 2.8rem 1.3rem 2.5rem;
-    background: #03050a;
-  }
-
-  .mob-header { text-align: center; margin-bottom: 2.8rem; }
-
-  .mob-eyebrow {
-    font-family: 'Syne', sans-serif;
-    font-size: 0.63rem;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: #7de8ff;
-    opacity: 0.65;
-    margin-bottom: 0.55rem;
-  }
-
-  .mob-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: 2.6rem;
-    color: rgba(200,220,230,0.93);
-    line-height: 1;
-  }
-
-  .mob-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.05rem;
-    color: rgba(200,220,230,0.42);
-    margin-top: 0.5rem;
-    letter-spacing: 0.07em;
-  }
-
-  .mob-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.9rem;
-    padding: 1.05rem 0;
-    border-bottom: 1px solid rgba(42,74,90,0.28);
-    text-decoration: none;
-  }
-
-  .mob-row.live { cursor: pointer; }
-  .mob-row.inactive { opacity: 0.42; cursor: default; pointer-events: none; }
-
-  .mob-dot {
-    flex-shrink: 0;
-    width: 9px; height: 9px;
-    border-radius: 50%;
-    margin-top: 0.3rem;
-  }
-  .mob-dot.live {
-    background: #7de8ff;
-    box-shadow: 0 0 8px rgba(125,232,255,0.65);
-  }
-  .mob-dot.inactive { background: #2a4a5a; }
-
-  .mob-info { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
-
-  .mob-name {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 0.88rem;
-    color: rgba(200,220,230,0.9);
-  }
-
-  .mob-desc {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 0.88rem;
-    color: rgba(80,110,130,0.85);
-    line-height: 1.42;
-  }
-
-  .mob-tag {
-    flex-shrink: 0;
-    font-family: 'Syne', sans-serif;
-    font-size: 0.56rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    padding: 0.22em 0.55em;
-    margin-top: 0.3rem;
-    align-self: flex-start;
-  }
-  .mob-tag.live {
-    color: #7de8ff;
-    border: 1px solid rgba(125,232,255,0.28);
-    background: rgba(125,232,255,0.08);
-  }
-  .mob-tag.incoming {
-    color: rgba(80,110,130,0.6);
-    border: 1px solid rgba(42,74,90,0.4);
-  }
+  .corner { display: none; }
 }
 </style>
 </head>
@@ -501,6 +400,25 @@ resize();
 // ── Mouse ─────────────────────────────────────────────────────────
 let mx = -9999, my = -9999;
 document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+// Touch: show tooltip on hold, navigate on tap
+canvas.addEventListener('touchstart', e => {
+  e.preventDefault();
+  const t = e.touches[0];
+  mx = t.clientX; my = t.clientY;
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+  e.preventDefault();
+  const t = e.touches[0];
+  mx = t.clientX; my = t.clientY;
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+  const hit = orbs.find(o => o.isLive && o.clickPulse <= 0 && o.contains(mx, my));
+  if (hit) { hit.clickPulse = 1; hit.clickTarget = hit.topic.url; }
+  setTimeout(() => { mx = -9999; my = -9999; }, 600);
+});
 
 // ── Intro fade ────────────────────────────────────────────────────
 let introHidden = false;
