@@ -6,7 +6,7 @@
 <title>Nico's Codex</title>
 <meta name="description" content="Nico's Codex — a curated knowledge base covering AI, technology, and beyond.">
 <meta property="og:title" content="Nico's Codex">
-<meta property="og:description" content="Move toward the light.">
+<meta property="og:description" content="Links I actually use to learn this stuff. Took a while to find most of it — it's all here, pick any.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Syne:wght@400;700&display=swap" rel="stylesheet">
@@ -40,9 +40,8 @@ html, body {
   pointer-events: none;
   z-index: 10;
   gap: 0.65rem;
-  transition: opacity 1.4s ease;
 }
-#intro.hidden { opacity: 0; }
+#intro.hidden .intro-subtitle { opacity: 0; }
 
 .intro-eyebrow {
   font-family: 'Syne', sans-serif;
@@ -71,6 +70,11 @@ html, body {
   font-size: clamp(1.05rem, 2.5vw, 1.55rem);
   color: rgba(200,220,230,0.48);
   letter-spacing: 0.1em;
+  max-width: 42ch;
+  text-align: center;
+  line-height: 1.45;
+  padding: 0 1.25rem;
+  transition: opacity 1.4s ease;
 }
 
 /* ── Corner labels ── */
@@ -167,9 +171,8 @@ html, body {
 <canvas id="canvas"></canvas>
 
 <div id="intro">
-  <span class="intro-eyebrow">Transmission received</span>
   <h1 class="intro-title">Nico's Codex</h1>
-  <p class="intro-subtitle">Move toward the light.</p>
+  <p class="intro-subtitle">Links I actually use to learn this stuff. Took a while to find most of it — it's all here, pick any.</p>
 </div>
 
 <div class="corner corner-tl">Nico's Codex<br>Free · No paywalls</div>
