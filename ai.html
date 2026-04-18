@@ -49,8 +49,8 @@ body {
 .nn-node[data-level="all"]          { --c:#d4a84b; --cd:rgba(212,168,75,0.58);  --cg:rgba(212,168,75,0.14); }
 
 .nn-ring {
-  width:  calc(62px * var(--nns, 1));
-  height: calc(62px * var(--nns, 1));
+  width:  calc(80px * var(--nns, 1));
+  height: calc(80px * var(--nns, 1));
   border-radius: 50%;
   border: 1.5px solid var(--cd);
   background: rgba(8,14,42,0.93);
@@ -68,7 +68,7 @@ body {
 
 .nn-num {
   font-family: 'Cinzel', serif;
-  font-size: calc(12px * var(--nns, 1));
+  font-size: calc(15px * var(--nns, 1));
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--c);
@@ -79,19 +79,19 @@ body {
 
 .nn-label {
   font-family: 'Cinzel', serif;
-  font-size: calc(10px * var(--nns, 1));
+  font-size: calc(13px * var(--nns, 1));
   font-weight: 400;
   letter-spacing: 0.06em;
   color: rgba(200,224,255,0.72);
   text-align: center;
   line-height: 1.45;
-  max-width: calc(88px * var(--nns, 1));
+  max-width: calc(105px * var(--nns, 1));
   transition: color 0.2s;
 }
 .nn-node:hover .nn-label { color: rgba(200,224,255,0.9); }
 
 .nn-meta {
-  font-size: calc(8px * var(--nns, 1));
+  font-size: calc(10px * var(--nns, 1));
   letter-spacing: 0.07em;
   color: rgba(200,224,255,0.2);
   text-align: center;
@@ -118,39 +118,41 @@ body {
 #nnTooltip {
   position: absolute;
   z-index: 30;
-  background: rgba(8,14,42,0.95);
-  border: 1px solid rgba(100,160,255,0.18);
-  backdrop-filter: blur(12px);
-  padding: 0.65rem 0.85rem 0.7rem;
-  width: 188px;
+  background: rgba(8,14,42,0.97);
+  border: 1px solid rgba(100,160,255,0.28);
+  border-left: 3px solid rgba(100,160,255,0.55);
+  backdrop-filter: blur(16px);
+  padding: 1rem 1.1rem 0.95rem;
+  width: 240px;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.18s ease;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45), 0 0 24px rgba(58,123,213,0.08);
 }
 #nnTooltip.visible { opacity: 1; }
 
 .tt-nn-name {
   font-family: 'Cinzel', serif;
-  font-size: 9.5px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: rgba(200,224,255,0.95);
-  margin-bottom: 5px;
+  color: rgba(200,224,255,0.98);
+  margin-bottom: 7px;
 }
 .tt-nn-desc {
-  font-size: 8.5px;
-  color: rgba(200,224,255,0.46);
-  line-height: 1.5;
-  margin-bottom: 7px;
+  font-size: 11px;
+  color: rgba(200,224,255,0.6);
+  line-height: 1.6;
+  margin-bottom: 10px;
   font-family: system-ui, sans-serif;
 }
 .tt-nn-badge {
   display: inline-block;
   font-family: 'Cinzel', serif;
-  font-size: 7px;
-  letter-spacing: 0.14em;
+  font-size: 8px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 1px 5px;
+  padding: 2px 7px;
   border: 1px solid;
   border-radius: 1px;
 }
@@ -345,7 +347,7 @@ LAYER_LABELS.forEach(l => {
 function resize() {
   W = canvas.width  = wrap.offsetWidth;
   H = canvas.height = wrap.offsetHeight;
-  NNS = Math.max(0.55, Math.min(1.2, Math.min(W / 1000, H / 580)));
+  NNS = Math.max(0.6, Math.min(1.35, Math.min(W / 900, H / 500)));
   wrap.style.setProperty('--nns', NNS);
   nodePos = NODES.map(n => ({ x: Math.round(n.fx * W), y: Math.round(n.fy * H) }));
   nodeEls.forEach((el, i) => {
@@ -427,7 +429,7 @@ function draw(ts) {
   nodePos.forEach((pos, i) => {
     const lvl = NODES[i].level;
     const hov = hoveredIdx === i;
-    const r   = (hov ? 48 : 32) * NNS;
+    const r   = (hov ? 62 : 42) * NNS;
     const a   = hov ? 0.18 : 0.07;
     const grd = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, r);
     grd.addColorStop(0, ca(lvl, a));
@@ -451,7 +453,7 @@ function showTip(i) {
   badge.style.color       = `rgb(${r},${g},${b})`;
   badge.style.borderColor = `rgba(${r},${g},${b},0.42)`;
 
-  const TW = 188, TH = 105;
+  const TW = 240, TH = 120;
   let left = pos.x + 44;
   let top  = pos.y - TH / 2;
   if (left + TW > W - 10) left = pos.x - TW - 44;
