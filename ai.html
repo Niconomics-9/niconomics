@@ -43,14 +43,14 @@ body {
   gap: 5px;
 }
 
-.nn-node[data-level="beginner"]     { --c:#4fd1c5; --cd:rgba(79,209,197,0.42);  --cg:rgba(79,209,197,0.14); }
-.nn-node[data-level="intermediate"] { --c:#3a7bd5; --cd:rgba(58,123,213,0.42);  --cg:rgba(58,123,213,0.14); }
-.nn-node[data-level="advanced"]     { --c:#a07de0; --cd:rgba(160,125,224,0.42); --cg:rgba(160,125,224,0.14); }
-.nn-node[data-level="all"]          { --c:#d4a84b; --cd:rgba(212,168,75,0.42);  --cg:rgba(212,168,75,0.14); }
+.nn-node[data-level="beginner"]     { --c:#4fd1c5; --cd:rgba(79,209,197,0.58);  --cg:rgba(79,209,197,0.14); }
+.nn-node[data-level="intermediate"] { --c:#3a7bd5; --cd:rgba(58,123,213,0.58);  --cg:rgba(58,123,213,0.14); }
+.nn-node[data-level="advanced"]     { --c:#a07de0; --cd:rgba(160,125,224,0.58); --cg:rgba(160,125,224,0.14); }
+.nn-node[data-level="all"]          { --c:#d4a84b; --cd:rgba(212,168,75,0.58);  --cg:rgba(212,168,75,0.14); }
 
 .nn-ring {
-  width: 54px;
-  height: 54px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   border: 1.5px solid var(--cd);
   background: rgba(8,14,42,0.93);
@@ -68,7 +68,7 @@ body {
 
 .nn-num {
   font-family: 'Cinzel', serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--c);
@@ -79,19 +79,19 @@ body {
 
 .nn-label {
   font-family: 'Cinzel', serif;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.06em;
-  color: rgba(200,224,255,0.58);
+  color: rgba(200,224,255,0.72);
   text-align: center;
   line-height: 1.45;
-  max-width: 80px;
+  max-width: 88px;
   transition: color 0.2s;
 }
 .nn-node:hover .nn-label { color: rgba(200,224,255,0.9); }
 
 .nn-meta {
-  font-size: 7px;
+  font-size: 8px;
   letter-spacing: 0.07em;
   color: rgba(200,224,255,0.2);
   text-align: center;
@@ -108,7 +108,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: rgba(100,160,255,0.28);
+  color: rgba(100,160,255,0.42);
   pointer-events: none;
   user-select: none;
   z-index: 5;
