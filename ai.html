@@ -40,7 +40,7 @@ body {
   align-items: center;
   text-decoration: none;
   z-index: 10;
-  gap: 5px;
+  gap: calc(5px * var(--nns, 1));
 }
 
 .nn-node[data-level="beginner"]     { --c:#4fd1c5; --cd:rgba(79,209,197,0.58);  --cg:rgba(79,209,197,0.14); }
@@ -49,8 +49,8 @@ body {
 .nn-node[data-level="all"]          { --c:#d4a84b; --cd:rgba(212,168,75,0.58);  --cg:rgba(212,168,75,0.14); }
 
 .nn-ring {
-  width: 62px;
-  height: 62px;
+  width:  calc(62px * var(--nns, 1));
+  height: calc(62px * var(--nns, 1));
   border-radius: 50%;
   border: 1.5px solid var(--cd);
   background: rgba(8,14,42,0.93);
@@ -68,7 +68,7 @@ body {
 
 .nn-num {
   font-family: 'Cinzel', serif;
-  font-size: 12px;
+  font-size: calc(12px * var(--nns, 1));
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--c);
@@ -79,19 +79,19 @@ body {
 
 .nn-label {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: calc(10px * var(--nns, 1));
   font-weight: 400;
   letter-spacing: 0.06em;
   color: rgba(200,224,255,0.72);
   text-align: center;
   line-height: 1.45;
-  max-width: 88px;
+  max-width: calc(88px * var(--nns, 1));
   transition: color 0.2s;
 }
 .nn-node:hover .nn-label { color: rgba(200,224,255,0.9); }
 
 .nn-meta {
-  font-size: 8px;
+  font-size: calc(8px * var(--nns, 1));
   letter-spacing: 0.07em;
   color: rgba(200,224,255,0.2);
   text-align: center;
@@ -104,7 +104,7 @@ body {
   top: 12px;
   transform: translateX(-50%);
   font-family: 'Cinzel', serif;
-  font-size: 7.5px;
+  font-size: calc(7.5px * var(--nns, 1));
   font-weight: 400;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -308,7 +308,7 @@ const canvas  = document.getElementById('nnCanvas');
 const ctx     = canvas.getContext('2d');
 const tooltip = document.getElementById('nnTooltip');
 
-let W = 0, H = 0;
+let W = 0, H = 0, NNS = 1;
 let nodePos  = [];
 let hoveredIdx = -1;
 
@@ -345,6 +345,8 @@ LAYER_LABELS.forEach(l => {
 function resize() {
   W = canvas.width  = wrap.offsetWidth;
   H = canvas.height = wrap.offsetHeight;
+  NNS = Math.max(0.55, Math.min(1.2, Math.min(W / 1000, H / 580)));
+  wrap.style.setProperty('--nns', NNS);
   nodePos = NODES.map(n => ({ x: Math.round(n.fx * W), y: Math.round(n.fy * H) }));
   nodeEls.forEach((el, i) => {
     el.style.left = nodePos[i].x + 'px';
@@ -363,7 +365,7 @@ function spawnPulse() {
     edge:  Math.floor(Math.random() * EDGES.length),
     t:     0,
     speed: 0.0035 + Math.random() * 0.003,
-    r:     2 + Math.random() * 1.5,
+    r:     (2 + Math.random() * 1.5) * NNS,
   });
 }
 
@@ -425,7 +427,7 @@ function draw(ts) {
   nodePos.forEach((pos, i) => {
     const lvl = NODES[i].level;
     const hov = hoveredIdx === i;
-    const r   = hov ? 48 : 32;
+    const r   = (hov ? 48 : 32) * NNS;
     const a   = hov ? 0.18 : 0.07;
     const grd = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, r);
     grd.addColorStop(0, ca(lvl, a));
