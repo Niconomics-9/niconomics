@@ -200,28 +200,32 @@ html, body {
 // ── Topic data ────────────────────────────────────────────────────
 const TOPICS = [
   {
-    name:   "AI Knowledge Base",
-    desc:   "Free, curated archive of AI learning resources — foundations, prompting, building, podcasts, newsletters, leaders, and repos.",
-    url:    "ai.html",
-    status: "LIVE"
+    name:    "AI Knowledge Base",
+    tagline: "Foundations · Prompting · Building",
+    desc:    "Free, curated archive of AI learning resources — foundations, prompting, building, podcasts, newsletters, leaders, and repos.",
+    url:     "ai.html",
+    status:  "LIVE"
   },
   {
-    name:   "Networking",
-    desc:   "Free, curated archive of networking resources — fundamentals, protocols, certifications, and hands-on labs.",
-    url:    "networking.html",
-    status: "LIVE"
+    name:    "Networking",
+    tagline: "Protocols · Certs · Labs",
+    desc:    "Free, curated archive of networking resources — fundamentals, protocols, certifications, and hands-on labs.",
+    url:     "networking.html",
+    status:  "LIVE"
   },
   {
-    name:   "Scripting",
-    desc:   "Curated scripting resources for IT pros and developers — PowerShell, Bash, Python, and automation. With a terminal game.",
-    url:    "scripting.html",
-    status: "LIVE"
+    name:    "Scripting",
+    tagline: "PowerShell · Bash · Python",
+    desc:    "Curated scripting resources for IT pros and developers — PowerShell, Bash, Python, and automation. With a terminal game.",
+    url:     "scripting.html",
+    status:  "LIVE"
   },
   {
-    name:   "Unreal Engine / Game Dev",
-    desc:   "Curated resources for learning UE5 — official docs, Blueprints, C++, free assets, and community. Includes an interactive terrain demo.",
-    url:    "unreal.html",
-    status: "LIVE"
+    name:    "Unreal Engine / Game Dev",
+    tagline: "UE5 · Blueprints · C++",
+    desc:    "Curated resources for learning UE5 — official docs, Blueprints, C++, free assets, and community. Includes an interactive terrain demo.",
+    url:     "unreal.html",
+    status:  "LIVE"
   },
 ];
 
@@ -430,6 +434,29 @@ const ttName  = tooltip.querySelector('.tt-name');
 const ttDesc  = tooltip.querySelector('.tt-desc');
 const ttBadge = tooltip.querySelector('.tt-badge');
 
+function drawOrbLabel(orb) {
+  const { x, y, radius: r, topic, hovered } = orb;
+  const baseY = y + r + 16;
+  ctx.save();
+  ctx.textAlign    = 'center';
+  ctx.textBaseline = 'top';
+
+  // Name
+  ctx.font      = '700 13px Syne, sans-serif';
+  ctx.fillStyle = hovered ? '#7de8ff' : 'rgba(125,232,255,0.82)';
+  ctx.shadowColor = 'rgba(125,232,255,0.4)';
+  ctx.shadowBlur  = hovered ? 10 : 4;
+  ctx.fillText(topic.name, x, baseY);
+
+  // Tagline
+  ctx.font        = 'italic 300 11px "Cormorant Garamond", serif';
+  ctx.fillStyle   = hovered ? 'rgba(200,220,230,0.75)' : 'rgba(200,220,230,0.38)';
+  ctx.shadowBlur  = 0;
+  ctx.fillText(topic.tagline, x, baseY + 19);
+
+  ctx.restore();
+}
+
 function updateTooltip(orb) {
   if (!orb) { tooltip.classList.remove('visible'); return; }
   const t = orb.topic;
@@ -442,7 +469,7 @@ function updateTooltip(orb) {
   const tipW = 260;
   const rawL = orb.x;
   const left = Math.max(tipW / 2 + pad, Math.min(W - tipW / 2 - pad, rawL));
-  const top  = orb.y + orb.radius + 16;
+  const top  = orb.y + orb.radius + 58;
   tooltip.style.left = `${left}px`;
   tooltip.style.top  = `${top}px`;
   tooltip.classList.add('visible');
@@ -548,6 +575,7 @@ function render() {
     }
 
     o.draw(ctx);
+    drawOrbLabel(o);
   }
 
   // Vignette
