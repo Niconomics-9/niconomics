@@ -467,6 +467,74 @@
     letter-spacing: 0;
   }
 
+  /* ── PATH START BANNER ──────────────────── */
+  .path-start-banner {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    background: rgba(59, 201, 245, 0.06);
+    border: 1px solid rgba(59, 201, 245, 0.32);
+    border-left: 3px solid var(--cyan);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .path-start-tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: var(--cyan);
+    flex-shrink: 0;
+    padding-top: 0.06rem;
+    white-space: nowrap;
+  }
+
+  .path-start-text {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ── FEATURED CARD BADGE ────────────────── */
+  .res-card-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .res-card-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.5rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--cyan);
+    padding: 0.18rem 0.65rem;
+    align-self: flex-start;
+  }
+
+  /* ── MENU CONNECTOR ─────────────────────── */
+  .menu-connector {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.5rem;
+    color: var(--cyan-dim);
+    padding: 0 0 0 1.82rem;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+
+  .menu-start-badge {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.46rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--cyan);
+    padding: 0.12rem 0.42rem;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
   @media (max-width: 640px) {
     html, body { overflow: auto; }
 
@@ -489,7 +557,9 @@
     .menu-header,
     .menu-divider,
     .menu-num,
-    .menu-count { display: none; }
+    .menu-count,
+    .menu-connector,
+    .menu-start-badge { display: none; }
 
     .menu-item {
       flex-shrink: 0;
@@ -548,8 +618,10 @@
         <span class="menu-label">Fundamentals</span>
         <span class="menu-level">Beginner</span>
       </span>
-      <span class="menu-count">4 RES</span>
+      <span class="menu-start-badge">Start</span>
     </div>
+
+    <div class="menu-connector">↓</div>
 
     <div class="menu-item" data-index="1">
       <span class="menu-num">02</span>
@@ -559,6 +631,8 @@
       </span>
       <span class="menu-count">4 RES</span>
     </div>
+
+    <div class="menu-connector">↓</div>
 
     <div class="menu-item" data-index="2">
       <span class="menu-num">03</span>
@@ -586,21 +660,29 @@
 
     <!-- ── Section 01 — Fundamentals ── -->
     <div class="section active" id="section-0">
-      <p class="section-eyebrow">Step 1 of 4 · Beginner</p>
+      <p class="section-eyebrow">Step 1 of 4 · Beginner · ~10–20 hrs total</p>
       <h2 class="section-title">Fundamentals</h2>
       <p class="section-subtitle">What a network is, how data moves, and the building blocks every IT professional needs locked in.</p>
 
+      <div class="path-start-banner">
+        <span class="path-start-tag">▶ START HERE</span>
+        <span class="path-start-text">New to networking? Begin with the FreeCodeCamp video below — it covers the OSI model, subnetting, and routing in one shot. Complete this section before moving to Protocols.</span>
+      </div>
+
       <div class="res-stack">
 
-        <a href="https://www.youtube.com/watch?v=qiQR5rTSshw" target="_blank" class="res-card">
-          <div class="res-type-bar"><span class="res-type-label">Video</span></div>
-          <div class="res-body">
-            <p class="res-name">Computer Networking Full Course — FreeCodeCamp</p>
-            <p class="res-desc">9-hour beginner deep dive: OSI model, TCP/IP, DNS, DHCP, subnetting, switching, routing.</p>
-            <p class="res-meta">Free · YouTube · ~9 hrs</p>
-          </div>
-          <div class="res-arrow">→</div>
-        </a>
+        <div class="res-card-wrap">
+          <span class="res-card-badge">Recommended First</span>
+          <a href="https://www.youtube.com/watch?v=qiQR5rTSshw" target="_blank" class="res-card">
+            <div class="res-type-bar"><span class="res-type-label">Video</span></div>
+            <div class="res-body">
+              <p class="res-name">Computer Networking Full Course — FreeCodeCamp</p>
+              <p class="res-desc">9-hour beginner deep dive: OSI model, TCP/IP, DNS, DHCP, subnetting, switching, routing.</p>
+              <p class="res-meta">Free · YouTube · ~9 hrs</p>
+            </div>
+            <div class="res-arrow">→</div>
+          </a>
+        </div>
 
         <a href="https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/" target="_blank" class="res-card">
           <div class="res-type-bar"><span class="res-type-label">Course</span></div>
@@ -643,7 +725,7 @@
 
     <!-- ── Section 02 — Protocols ── -->
     <div class="section" id="section-1">
-      <p class="section-eyebrow">Step 2 of 4 · Intermediate</p>
+      <p class="section-eyebrow">Step 2 of 4 · Intermediate · ~15–25 hrs total</p>
       <h2 class="section-title">Protocols</h2>
       <p class="section-subtitle">Go deeper — understand how traffic actually flows, what tools capture it, and why protocols behave the way they do.</p>
 
@@ -700,7 +782,7 @@
 
     <!-- ── Section 03 — Certs & Careers ── -->
     <div class="section" id="section-2">
-      <p class="section-eyebrow">Step 3 of 4 · Intermediate</p>
+      <p class="section-eyebrow">Step 3 of 4 · Intermediate · ~20–40 hrs total</p>
       <h2 class="section-title">Certs &amp; Careers</h2>
       <p class="section-subtitle">Map your path to professional certification and the roles that networking knowledge unlocks.</p>
 
@@ -747,7 +829,7 @@
 
     <!-- ── Section 04 — Labs & Practice ── -->
     <div class="section" id="section-3">
-      <p class="section-eyebrow">Step 4 of 4 · All Levels</p>
+      <p class="section-eyebrow">Step 4 of 4 · All Levels · ongoing</p>
       <h2 class="section-title">Labs &amp; Practice</h2>
       <p class="section-subtitle">Get hands-on. Simulators, virtual labs, and practice environments to drill what you've learned until it sticks.</p>
 
